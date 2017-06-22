@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vostok</title>
+    <meta name="description" content="A Collection of Page Transitions with CSS Animations" />
+    <meta name="keywords" content="page transition, css animation, website, effect, css3, jquery" />
+    <meta name="author" content="Ramdesign" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<nav>
+    <ul class="primary">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="cv.html">CV</a>
+        </li>
+        <li>
+            <a href="portofolio.html">Portfolio</a>
+            <ul class="sub">
+                <li><a href="">Year 5 DS20</a></li>
+                <li><a href="">Year 4 DS19</a></li>
+                <li><a href="">Year OUT</a></li>
+                <li><a href="">Year 3 DS06</a></li>
+                <li><a href="">Year 1 & 2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="photography.html">Photography</a>
+            <ul class="sub">
+                <li><a href="">Photography</a></li>
+                <li><a href="">Video and Animation</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="start animated fadeInDown">
+    <div class="logo" id="logo" ><a href="index.html"><img id="logoImage" src="img/logo.jpg" alt="HS logo"></a></div>
+</div>
+<div class="logo_text animated fadeIn" id="button" onclick="startAnimation();"> welcome</div>
+
+
+<div id="wrapper">
+
+    <img src="img/index.png"/>
+</div>
+
+<!--<div class="section1">-->
+<!--<div class="section_title">Activity</div>-->
+<!--<div class="section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+<!--Nam urna nunc, pharetra id ante vel, dapibus mollis-->
+<!--lectus. Quisque leo erat, ornare et ultrices ut, sollicitudin.</div>-->
+<!--</div>-->
+
+<!--<div class="section2">-->
+<!--<div class="section_title">Activity</div>-->
+<!--<div class="section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+<!--Nam urna nunc, pharetra id ante vel, dapibus mollis-->
+<!--lectus. Quisque leo erat, ornare et ultrices ut, sollicitudin.</div>-->
+<!--</div>-->
+
+<!--<div class="section3">-->
+<!--<div class="section_title">Activity</div>-->
+<!--<div class="section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+<!--Nam urna nunc, pharetra id ante vel, dapibus mollis-->
+<!--lectus. Quisque leo erat, ornare et ultrices ut, sollicitudin.</div>-->
+<!--</div>-->
+
+<!--</div>-->
+
+<!--<div class="section4">-->
+<!--<div class="title_contact">Keep in touch.</div>-->
+<!--<div class="text_contact">+(359) 999 9999 9 | email@email.com | Addres, Sofia, Bulgaria-->
+<!--</div>-->
+<!--</div>-->
+
+
+
+</body>
+<script>
+    $(document).ready(function(){
+
+//            $('.logo_text').addClass('animated fadeIn');
+
+        $('#button').on('click', function(){
+            document.getElementById("logo").style.WebkitAnimationPlayState = "running";
+            $('#button').addClass('animated fadeOut');
+
+            setTimeout(function(){
+                $('.title').addClass('animated fadeInDown');
+//                  $('#wrapper').addClass('animated zoomIn');
+                $('.section4').addClass('animated fadeInUp');
+//                    $('#button').addClass('animated fadeOut');
+                $('nav').addClass('animated fadeInDown')
+            },1500),
+
+                setTimeout(function(){
+                    $('#wrapper').addClass('animated zoomIn');
+                },2150);
+        })
+    })
+</script>
+</html>
