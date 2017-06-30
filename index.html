@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vostok</title>
+    <title>Hristina Stoyanova</title>
     <meta name="description" content="A Collection of Page Transitions with CSS Animations" />
     <meta name="keywords" content="page transition, css animation, website, effect, css3, jquery" />
     <meta name="author" content="Ramdesign" />
     <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body>
+<!--background-->
+<video id="bgvid" playsinline autoplay muted loop>
+    <source src="img/cities.mp4" type="video/mp4">
+</video>
 
+<!--navigation-->
 <nav>
     <!--<li id="titleNav">Hristina <br> Stoyanova</li>-->
     <ul class="primary">
@@ -48,58 +53,23 @@
     </ul>
 </nav>
 
+<!--onLoad animation-->
 <div class="start animated fadeInDown">
-    <div class="logo" id="logo" ><a href="index.html"><img id="logoImage" src="img/logo.jpg" alt="HS logo"><p id="titleNav">Hristina <br> Stoyanova</p></a></div>
+    <div class="logo" id="logo" ><a href="index.html"><img id="logoImage" src="img/Hrisi-logo.svg" alt="HS logo"><p id="titleNav">HRISTINA <br> STOYANOVA</p></a></div>
 </div>
-<div class="logo_text animated fadeIn" id="button" onclick="startAnimation();"> welcome</div>
+<div class="logo_text animated fadeIn" id="button" onclick="startAnimation();"> WELCOME </div>
 
+<div class="container" id="mainContainer">
+    <div class="row">
+        <div class="col-lg-4 rowBorder">info</div>
+        <div class="col-lg-4 rowBorder">info</div>
+        <div class="col-lg-4 rowBorder">info</div>
 
-<div id="wrapper">
-
-    <img src="img/index.png"/>
-
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     width="340px" height="333px" viewBox="0 0 340 333" enable-background="new 0 0 340 333" xml:space="preserve">
-
-  <path class="path" fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M66.039,133.545c0,0-21-57,18-67s49-4,65,8
-    s30,41,53,27s66,4,58,32s-5,44,18,57s22,46,0,45s-54-40-68-16s-40,88-83,48s11-61-11-80s-79-7-70-41
-    C46.039,146.545,53.039,128.545,66.039,133.545z"/>
-
-</svg>
+    </div>
 </div>
-
-    <!--<div class="section1">-->
-        <!--<div class="section_title">Activity</div>-->
-        <!--<div class="section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-            <!--Nam urna nunc, pharetra id ante vel, dapibus mollis-->
-            <!--lectus. Quisque leo erat, ornare et ultrices ut, sollicitudin.</div>-->
-    <!--</div>-->
-
-    <!--<div class="section2">-->
-        <!--<div class="section_title">Activity</div>-->
-        <!--<div class="section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-            <!--Nam urna nunc, pharetra id ante vel, dapibus mollis-->
-            <!--lectus. Quisque leo erat, ornare et ultrices ut, sollicitudin.</div>-->
-    <!--</div>-->
-
-    <!--<div class="section3">-->
-        <!--<div class="section_title">Activity</div>-->
-        <!--<div class="section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-            <!--Nam urna nunc, pharetra id ante vel, dapibus mollis-->
-            <!--lectus. Quisque leo erat, ornare et ultrices ut, sollicitudin.</div>-->
-    <!--</div>-->
-
-<!--</div>-->
-
-<!--<div class="section4">-->
-    <!--<div class="title_contact">Keep in touch.</div>-->
-    <!--<div class="text_contact">+(359) 999 9999 9 | email@email.com | Addres, Sofia, Bulgaria-->
-    <!--</div>-->
-<!--</div>-->
-
-
 
 </body>
+<!--animations script-->
 <script>
     $(document).ready(function(){
 
@@ -118,7 +88,7 @@
             },1500),
 
                 setTimeout(function(){
-                    $('#wrapper').addClass('animated zoomIn');
+                    $('#mainContainer').addClass('animated fadeIn');
                 },2150);
         })
     })

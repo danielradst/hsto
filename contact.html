@@ -25,7 +25,7 @@
             <a href="cv.html">CV</a>
         </li>
         <li>
-            <a href="portofolio.html">Portfolio</a>
+            <a href="portfolio.html">Portfolio</a>
             <ul class="sub">
                 <li><a href="">Year 5 DS20</a></li>
                 <li><a href="">Year 4 DS19</a></li>
@@ -47,69 +47,71 @@
     </ul>
 </nav>
 
-<div class="start animated fadeInDown">
-    <div class="logo" id="logo" ><a href="index.html"><img id="logoImage" src="img/logo.jpg" alt="HS logo"></a></div>
+<!--<div class="start animated fadeInDown">-->
+    <!--<div class="logo" id="logo" ><a href="index.html"><img id="logoImage" src="img/logo.jpg" alt="HS logo"></a></div>-->
+<!--</div>-->
+<!--<div class="logo_text animated fadeIn" id="button" onclick="startAnimation();"> welcome</div>-->
+
+
+<div class="container">
+    <div class="row">
+        <!--contact info-->
+        <div class="col-lg-12">
+
+            <p style="text-decoration: underline">Contact</p>
+            <br>
+            <p>
+                London, UK<br>
+                Sofia, Bulgaria<br>
+            </p>
+            <br>
+            <p style="text-decoration: underline">
+                Tell:
+            </p>
+            <p>
+                +447599413142
+                +359888322298
+            </p>
+            <br>
+            <p style="text-decoration: underline">
+                Email:
+            </p>
+            <p><a href=""> </a>
+                stoyanova.h@gmail.com
+            </p>
+            <br>
+            <p style="text-decoration: underline">
+                <a href="http://hsto.tumblr.com/">
+                Tumblr:
+            </a>
+            </p>
+
+        </div>
+
+    </div>
 </div>
-<div class="logo_text animated fadeIn" id="button" onclick="startAnimation();"> welcome</div>
-
-
-<div id="wrapper">
-
-    <img src="img/index.png"/>
-</div>
-
-<!--<div class="section1">-->
-<!--<div class="section_title">Activity</div>-->
-<!--<div class="section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-<!--Nam urna nunc, pharetra id ante vel, dapibus mollis-->
-<!--lectus. Quisque leo erat, ornare et ultrices ut, sollicitudin.</div>-->
-<!--</div>-->
-
-<!--<div class="section2">-->
-<!--<div class="section_title">Activity</div>-->
-<!--<div class="section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-<!--Nam urna nunc, pharetra id ante vel, dapibus mollis-->
-<!--lectus. Quisque leo erat, ornare et ultrices ut, sollicitudin.</div>-->
-<!--</div>-->
-
-<!--<div class="section3">-->
-<!--<div class="section_title">Activity</div>-->
-<!--<div class="section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-<!--Nam urna nunc, pharetra id ante vel, dapibus mollis-->
-<!--lectus. Quisque leo erat, ornare et ultrices ut, sollicitudin.</div>-->
-<!--</div>-->
-
-<!--</div>-->
-
-<!--<div class="section4">-->
-<!--<div class="title_contact">Keep in touch.</div>-->
-<!--<div class="text_contact">+(359) 999 9999 9 | email@email.com | Addres, Sofia, Bulgaria-->
-<!--</div>-->
-<!--</div>-->
-
-
 
 </body>
 <script>
     $(document).ready(function(){
-
+        $('nav').addClass('animated fadeInDown')
 //            $('.logo_text').addClass('animated fadeIn');
 
-        $('#button').on('click', function(){
-            document.getElementById("logo").style.WebkitAnimationPlayState = "running";
-            $('#button').addClass('animated fadeOut');
-
-            setTimeout(function(){
-                $('.title').addClass('animated fadeInDown');
-//                  $('#wrapper').addClass('animated zoomIn');
-                $('.section4').addClass('animated fadeInUp');
-//                    $('#button').addClass('animated fadeOut');
-                $('nav').addClass('animated fadeInDown')
-            },1500),
-
-                setTimeout(function(){
-                    $('#wrapper').addClass('animated zoomIn');
-                },2150);
-        })
+//        $('#button').on('click', function(){
+//            document.getElementById("logo").style.WebkitAnimationPlayState = "running";
+//            $('#button').addClass('animated fadeOut');
+//
+//            setTimeout(function(){
+//                $('.title').addClass('animated fadeInDown');
+////                  $('#wrapper').addClass('animated zoomIn');
+//                $('.section4').addClass('animated fadeInUp');
+////                    $('#button').addClass('animated fadeOut');
+//                $('nav').addClass('animated fadeInDown')
+//            },1500),
+//
+//                setTimeout(function(){
+//                    $('#wrapper').addClass('animated zoomIn');
+//                },2150);
+//        })
     })
 </script>
